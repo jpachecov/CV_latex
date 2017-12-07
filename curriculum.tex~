@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[green]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\AtBeginDocument{\setlength{\maketitlenamewidth}{15cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% Hyperlinks
+\usepackage{hyperref}								% to use hyperlinks
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% personal data
+\firstname{Jean Pierre}
+\familyname{Pacheco Avila}
+\title{Resumen}               % optional, remove the line if not wanted
+\address{México}{Distrito Federal}    % optional, remove the line if not wanted
+%\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
+\phone{5534752379}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{jeanpierre@ciencias.unam.mx}                      % optional, remove the line if not wanted
+%\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
+%\homepage{http://gr.linkedin.com/pub/stefania-dakourou/41/21a/396}%{LinkedIn Profile}}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Educación}
+%\cventry{2015}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{2015}{Licenciatura}{Facultad de Ciencias, UNAM}{}{Ciencias de la Computación}{Cursamiento de última materia de la carrera.}
+\cventry{2015}{Licenciatura}{Facultad de Ciencias, UNAM}{}{}{Desarrollo de proyecto de titulación por apoyo a la docencia, Facultad de Ciencias.}
+
+
+\section{Experiencia}
+\cvline{}{Sólo académica.}
+
+\section{Proyectos académicos destacados}
+\cvline{C y C++ :}{Desarrollo de un compilador para un subconjunto de Python}
+\cvline{Python :}{Implementación de métodos numéricos para integración, derivación, resolución de ecuaciones diferenciales, resolución de sistemas de ecuaciones, etc.}
+\cvline{Java, HTML, CSS, javascript :}{Sistema para la administración de equipos de cómputo del Insituto de Investigaciones Bibliográficas de la UNAM.}
+\cvline{C :}{Implementación de subconjuntos de los protocolos FTP y HTTP.}
+
+\section{Idiomas}
+\cvlanguage{Español :}{Nativo}{}
+\cvlanguage{Inglés :}{Intermedio}{Comprensión de lectura}
+
+\section{Habilidades en computación}
+\cvline{Basico:}{\small UML, Lenguaje de consulta SQL, PostgresSQL, Photoshop, GIMP. Desarrollo de aplicaciones móviles para android.}
+\cvline{Intermedio:}{\small PHP, Javascript, CSS, HTML, jQuery, Python, C, C++, Haskell, Prolog}
+\cvline{Avanzado:}{\small Programación en Java}
+\cvline{Herramientas:}{\small Android-Studio(Básico), SASS}
+\cvline{Otros:}{\small Windows, Linux}
+
+\section{Cualidades}
+\cvline{Habilidades personales:}{Fuertemente analítico. Capacidad de resolver problemas usando un enfoque matemático y computacional. Dispuesto a desarrollar nuevas habilidades. Rápido aprendizaje de herramientas computacionales y lenguajes de programación. Fácil adaptabilidad ante diversas situaciones. Buen control trabajando bajo presión.}
+\cvline{Experiencia con:}{Desarrollo Web en general. Metodología SCRUM de desarrollo de software. Programación funcional y lógica. Programación orientada a objetos. Uso y mantenimiento de sistemas operativos.}
+
+\end{document}
+
